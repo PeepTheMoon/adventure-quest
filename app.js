@@ -14,11 +14,3 @@ myForm.addEventListener('submit', (event) => {
     const stringedUser = JSON.stringify(user);
     localStorage.setItem('USER', stringedUser);
 });
-
-
-
-// function playerInfo(name, hp, gold) {
-//     this.name = name;
-//     this.hp = 15;
-//     this.gold = 0;
-// }
