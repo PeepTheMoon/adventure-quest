@@ -1,3 +1,5 @@
+import makeUser from './make-user.js';
+
 const myForm = document.getElementById('user-form');
 
 myForm.addEventListener('submit', (event) => {
@@ -5,5 +7,18 @@ myForm.addEventListener('submit', (event) => {
 
     const form = new FormData(myForm);
 
-    console.log(form.get('class'), form.get('name'));
+    makeUser(form);
+
+    const user = makeUser(form);
+
+    const stringedUser = JSON.stringify(user);
+    localStorage.setItem('USER', stringedUser);
 });
+
+
+
+// function playerInfo(name, hp, gold) {
+//     this.name = name;
+//     this.hp = 15;
+//     this.gold = 0;
+// }
