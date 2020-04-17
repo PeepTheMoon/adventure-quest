@@ -16,7 +16,7 @@ test('makes a user object in js from form data', function(assert) {
         name: 'rachel',
         userClass: 'elf',
         completed: {},
-        HP: 20,
+        hp: 20,
         gold: 0
     };
     //Act 

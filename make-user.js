@@ -6,7 +6,7 @@ export default function makeUser(_formData) {
         name: name,
         userClass: userClass,
         completed: {},
-        HP: 20,
+        hp: 20,
         gold: 0
     };
     return userObject;
